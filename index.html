@@ -6,39 +6,18 @@
 <meta name="keywords" content="Townsend Brown structural engineering engineer">
 <title>T Brown Engineering</title>
 <link href="bootstrap.min.css" rel="stylesheet">
-<link href='https://fonts.googleapis.com/css?family=Economica' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
 <style>
 <!--
  /* Font Definitions */
 body {
-    font-family: Verdana,"Times New Roman";
-    background-color: #dddddd;
+    font-family: "Oswald", Verdana;
+    background: transparent url(img/textured_paper.png) 0 0 repeat;
     margin:0;
     padding: 0;
 }
 
-h1 {
-  font-family: 'Economica', sans-serif;
-  color: #fff;
-  font-weight: 300; 
-  font-size: 4rem;
-  margin-top: 30px;
-}
-
-h1 strong {
-  color: #ddd;
-  font-weight: 400;  
-}
-
-.address {
-  line-height: 2em;
-  border-right: 1px solid #eee;
-}
 .address a { display: block; }
-.navbar {
-  height: 100px;  
-  background-color: #333;  
-}
 
 ul {
   padding: 0; 
@@ -48,18 +27,132 @@ ul {
 
 .title { color: #5F5F5F; padding-bottom: 20px; }
 
+.logo {  
+  float: left;
+  width: 40%;
+  margin: 0 auto;
+}
+.address {
+  line-height: 2em;
+  border-left: 1px solid #eee;  
+  float: left;
+  width: 60%;
+  padding-left: 2.5%;
+  margin-top: 6%;
+}
+
+h1 {
+  font-family: 'Oswald', sans-serif;
+  color: #333;
+  font-weight: 700; 
+  font-size: 4rem;
+  margin-top: 30px; 
+  text-align: center; 
+}
+
+.name {
+  display: block;
+}
+
+.first {
+  letter-spacing: 0.6rem;
+}
+
+
+.middle {
+  letter-spacing: 0.9rem;
+  padding-left: 0.6rem;
+}
+
+.last {  
+  font-weight: 400; 
+  font-size: 3.6rem;
+  letter-spacing: 0.1rem;
+}
+
+h1 strong {
+  color: #999;
+  font-weight: 300;  
+  font-size: 2rem;
+  line-height: 4rem;
+  letter-spacing: 0.3rem;
+  display: block;
+}
+
+
+section {
+  width: 45rem;
+  margin: auto;
+  position: absolute;
+  top: 50%; left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+}
+
+@media only screen and (max-width : 500px) {
+  section {
+    width: 100%;
+    margin: auto;
+    position: absolute;
+    top: 0%; 
+    left: 0%;
+    -webkit-transform: translate(0%,0%);
+        -ms-transform: translate(0%,0%);
+            transform: translate(0%,0%);
+  }
+  .logo { 
+    float: none;
+    border-bottom: 1px solid #eee;  
+  }
+  .address {
+    width: 100%;
+    padding-left: 25%;
+    border-left: 0px solid #eee;  
+  }
+}
 </style>
 </head>
 
 <body>
-  <nav class="navbar">
+  <section>
+    
+    <div class="logo"><h1><span class="name first">TOWN</span><span class="name middle">SEND</span><span class="name last">BROWN</span><strong>CE, LEED AP</strong></div>
+
+    <div class="address">
+      <div itemscope itemtype ="http://schema.org/LocalBusiness">
+        <div itemprop="name">TOWNSEND BROWN, CE LEED</div>
+        <div class="title">STRUCTURAL ENGINEERING</div>
+
+        <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+          <span itemprop="streetAddress">4416 HARBORD DR</span>
+          <span itemprop="addressLocality">OAKLAND</span>,
+          <span itemprop="addressRegion">CA</span>
+          <span itemprop="postalCode">94618</span>
+        </div>
+        <a href="mailto:clhemphill@gmail.com" itemprop="email">TOWNSEND@TBBUILDS.COM</a>
+        <span itemprop="telephone">(510) 520-7175</span>          
+      </div>       
+    </div>            
+
+  </section>
+
+
+
+
+ <!--  <nav class="navbar">
     <div class="container">    
       <div class="row">
         <div class="col-md-12"><h1>Townsend Brown, <strong>CE LEED</strong></div>      
       </div>
     </div>
-  </nav>  
-  <div class="container">    
+  </nav>   -->
+  <!-- <section>   
+    <div class="wrapper"> 
+      <div class="logo"><h1>Townsend Brown, <strong>CE LEED</strong></div>
+      
+  </div> -->
+  <!-- <div class="container">    
     <div class="row">      
       <div class="col-md-4 address">
         <div class="title">S T R U C T U R A L &nbsp;&nbsp; E N G I N E E R I N G</div>
@@ -86,6 +179,6 @@ ul {
         </ul>
       </div>
     </div>  
-  </div>
+  </div> -->
 </body>
 </html>
